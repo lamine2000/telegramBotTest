@@ -20,7 +20,8 @@ bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.on('voice', ctx => ctx.reply('ecris lawax'))
 bot.hears('hi', (ctx) => ctx.reply('Hey there'))
-bot.hears('video', ctx => ctx.replyWithVideo({source: 'video.mp4'}))
+bot.on('new_chat_members', ctx => ctx.reply('Hello the new one'))
+bot.command('video', ctx => ctx.replyWithVideo({source: 'video.mp4'}))
 
 //commands
 bot.command('oldschool', (ctx) => ctx.reply('Hello'))
