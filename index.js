@@ -30,6 +30,7 @@ bot.command('hipster', ctx => {
 })
 
 //launching bot
+//commentaire
 bot.launch()
 
 // Enable graceful stop
