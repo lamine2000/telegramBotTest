@@ -30,8 +30,6 @@ bot.command('hipster', ctx => {
 })
 
 //launching bot
-//bot.telegram.setWebhook('https://149.154.167.50:443', {max_connections:999})
-//bot.startWebhook('/', null, 443)
 bot.launch()
 
 // Enable graceful stop
