@@ -15,7 +15,7 @@ const inlineReply = (ctx, answer) => {
         {reply_to_message_id: ctx.message.message_id})
 }
 
-bot.start((ctx) => ctx.reply('Welcome'))
+//bot.start((ctx) => ctx.reply('Welcome'))
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('👍'))
 bot.on('voice', ctx => ctx.reply('ecris lawax'))
