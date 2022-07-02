@@ -17,10 +17,10 @@ const inlineReply = (ctx, answer) => {
 
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.start((ctx) => ctx.reply('Welcome'))
-bot.hears('hi', (ctx) => ctx.reply('Hey there'))
+bot.hears('hi', ctx => ctx.reply('Hey there'))
 bot.on('new_chat_members', ctx => ctx.reply('Hello the new one'))
 bot.on('voice', ctx => ctx.reply('ecris lawax'))
-bot.on('sticker', (ctx) => ctx.reply('👍'))
+bot.on('sticker', ctx => ctx.reply('👍'))
 
 //commands
 bot.command('video', ctx => ctx.replyWithVideo({source: 'video.mp4'}))
