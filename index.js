@@ -1,6 +1,6 @@
 const secrets = require('./secrets.js') 
 const { Telegraf } = require('telegraf')
-const fs = require('fs')
+require('fs')
 
 const bot = new Telegraf(`${secrets.token}`, {
   telegram: {
@@ -21,6 +21,7 @@ bot.hears('hi', ctx => ctx.reply('Hey there'))
 bot.on('new_chat_members', ctx => ctx.reply('Hello the new one'))
 bot.on('voice', ctx => ctx.reply('ecris lawax'))
 bot.on('sticker', ctx => ctx.reply('👍'))
+bot.hears('gallo', ctx => inlineReply(ctx, 'Phrase'))
 
 //commands
 bot.command('video', ctx => ctx.replyWithVideo({source: 'video.mp4'}))
