@@ -22,6 +22,7 @@ bot.on('new_chat_members', ctx => ctx.reply('Hello the new one'))
 bot.on('voice', ctx => ctx.reply('ecris lawax'))
 bot.on('sticker', ctx => ctx.reply('👍'))
 bot.hears('boite', ctx => inlineReply(ctx, 'boite quoi ??'))
+bot.hears('gallo', ctx => inlineReply(ctx, 'gallo quoi ??'))
 
 //commands
 bot.command('video', ctx => ctx.replyWithVideo({source: 'video.mp4'}))
